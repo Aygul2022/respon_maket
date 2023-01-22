@@ -1,0 +1,67 @@
+.maket{
+    display: grid;
+    font-weight: bolder;
+    font-size: 1.5em;
+    width: 100vw;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    grid-template-areas: "header"
+    "main" "footer";
+   }
+
+.header{
+background-color: cadetblue;
+text-align: center;
+padding: 1em;
+font-size: 1em;
+grid-area: header;
+}
+
+.main{
+  display: grid; 
+  grid-template-columns: 60% 40%; 
+  /* grid-template-rows: auto auto; */
+  grid-area: main;
+}
+.main_content{
+    height: auto ;
+    background-color: bisque;
+    display: grid;
+      text-align: center;
+    gap: 1em;
+    padding: 1em;
+}
+.main_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+   
+}
+.content{
+    /* height: auto; */
+    background-color: orange;
+    text-align: center;
+    padding: 1.5em 1em 1em 1em;
+}
+         
+.aside{
+    /* height: auto; */
+    background-color: aquamarine;
+    text-align: center;
+    padding: 1.5em 1em 1em 1em;
+}
+.footer{
+   
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1.5em;
+    grid-area: footer;
+      
+}
+.section{
+    /* min-height: 10%; */
+    background-color: white;
+   padding: 1.5em 1em 1em 2.5em;
+}
